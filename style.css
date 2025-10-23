@@ -1,0 +1,113 @@
+
+    .heading{
+        color: red;
+    }
+    .photo>img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border: 4px solid black;
+        position: relative;
+        left: 810px;
+        top: 25px;
+        bottom: 1900px;
+        transition: transform 3s ease;
+    }
+    .photo>img:hover{
+        animation:  zoom-in 2s linear infinite;
+        transform: scale(1.1);
+    }
+    @keyframes zoom-in{
+        0%{
+            width: 20%;
+            height: 20%;
+        }
+        50%{
+            width: 20%;
+            height: 20%;
+        }
+        100%{
+            width: 20%;
+            height: 20%;
+        }
+    }
+    .aboutme{
+        color: black;
+        position: relative;
+        gap: 5rem;
+        bottom: 250px;
+
+    }
+    .body{
+        position: relative;
+        bottom: 200px;
+        font-style: oblique;
+        font-family: cursive;
+        line-height: 25px;
+        padding-right: 450px;
+        transform: translateX(-300px);
+        animation: slideIn 2s infinite ease-in-out;
+    }
+    @keyframes slideIn {
+        to {
+          transform: translateX(0);
+        }
+      }
+    .projects{
+        position: relative;
+        bottom: 150px;
+    }
+    .probody{
+        position: relative;
+        bottom: 150px;
+    }
+    .internships{
+        position: relative;
+        bottom: 150px;
+    }
+    .internbody{
+        position: relative;
+        bottom: 150px;
+    }
+    .contact{
+        position: relative;
+        bottom: 150px;
+    }
+    button{
+        background-color: aqua;
+        position: relative;
+        bottom: 140px;
+        margin-left: 180px;
+    }
+    .links{
+        color: black;
+        position: relative;
+        bottom: 100px;
+    }
+    .heading{
+        background-color: beige;
+        padding: 20px;
+        
+    }
+    @media(max-width:1024px){
+        heading{
+            font-size: 16px;
+            padding: 20px;
+        }
+        .photo>img{
+            flex:1 1 45%
+        }
+    }
+    @media(max-width:600px){
+        heading{
+            font-size: 16px;
+        }
+        .total{
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo>img{
+            width: 90%;
+        }
+    }
+    
