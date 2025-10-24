@@ -19,15 +19,15 @@
     }
     @keyframes zoom-in{
         0%{
-            width: 10%;
-            height: 10%;
+            width: 20%;
+            height: 20%;
         }
         50%{
             width: 10%;
             height: 10%;
         }
         100%{
-            width: 10%;
+            width: 20%;
             height: 10%;
         }
     }
